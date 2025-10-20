@@ -1,0 +1,216 @@
+2025-10-18 19:43:01,124 - tower_witch - INFO - <module>:548 - ============================================================
+2025-10-18 19:43:01,124 - tower_witch - INFO - <module>:549 - Tower Witch started at 2025-10-18 19:43:01.124252
+2025-10-18 19:43:01,124 - tower_witch - INFO - <module>:550 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=10.0, lat=44.9778, lon=-93.265, debug=True, log_file='tower_witch.log', timeout=10)
+2025-10-18 19:43:01,124 - tower_witch - INFO - <module>:551 - ============================================================
+2025-10-18 19:43:01,125 - tower_witch - INFO - <module>:557 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:43:01,125 - tower_witch - INFO - <module>:569 - Starting GPS position acquisition
+2025-10-18 19:43:01,125 - tower_witch - INFO - <module>:575 - Using manual coordinates: 44.9778, -93.265
+2025-10-18 19:43:01,125 - tower_witch - INFO - <module>:623 - GPS position obtained: 44.977800, -93.265000
+2025-10-18 19:44:39,729 - tower_witch - INFO - <module>:548 - ============================================================
+2025-10-18 19:44:39,729 - tower_witch - INFO - <module>:549 - Tower Witch started at 2025-10-18 19:44:39.729544
+2025-10-18 19:44:39,729 - tower_witch - INFO - <module>:550 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=44.9778, lon=-93.265, debug=True, log_file='tower_witch.log', timeout=10)
+2025-10-18 19:44:39,729 - tower_witch - INFO - <module>:551 - ============================================================
+2025-10-18 19:44:39,732 - tower_witch - INFO - <module>:557 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:44:39,732 - tower_witch - INFO - <module>:569 - Starting GPS position acquisition
+2025-10-18 19:44:39,732 - tower_witch - INFO - <module>:575 - Using manual coordinates: 44.9778, -93.265
+2025-10-18 19:44:39,732 - tower_witch - INFO - <module>:623 - GPS position obtained: 44.977800, -93.265000
+2025-10-18 19:44:40,792 - tower_witch - INFO - <module>:548 - ============================================================
+2025-10-18 19:44:40,792 - tower_witch - INFO - <module>:549 - Tower Witch started at 2025-10-18 19:44:40.792587
+2025-10-18 19:44:40,792 - tower_witch - INFO - <module>:550 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=True, log_file='tower_witch.log', timeout=30)
+2025-10-18 19:44:40,792 - tower_witch - INFO - <module>:551 - ============================================================
+2025-10-18 19:44:40,793 - tower_witch - INFO - <module>:557 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:44:40,794 - tower_witch - INFO - <module>:569 - Starting GPS position acquisition
+2025-10-18 19:44:40,794 - tower_witch - INFO - <module>:580 - Attempting to read from gpsd
+2025-10-18 19:44:40,795 - tower_witch - DEBUG - check_gpsd_running:414 - Checking if gpspipe is available...
+2025-10-18 19:44:40,796 - tower_witch - DEBUG - check_gpsd_running:418 - gpspipe version: 
+2025-10-18 19:44:40,796 - tower_witch - DEBUG - check_gpsd_running:420 - Attempting to connect to gpsd...
+2025-10-18 19:44:40,826 - tower_witch - INFO - check_gpsd_running:424 - gpsd running: True
+2025-10-18 19:44:40,826 - tower_witch - DEBUG - get_gps_position_gpsd:226 - Starting gpspipe (default host/port)
+2025-10-18 19:44:40,826 - tower_witch - INFO - get_gps_position_gpsd:233 - Waiting up to 30s for GPS fix...
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 1: {"class":"VERSION","release":"3.25","rev":"3.25","proto_major":3,"proto_minor":15}
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: VERSION
+2025-10-18 19:44:40,827 - tower_witch - INFO - get_gps_position_gpsd:252 - gpsd version: 3.25
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 2: {"class":"DEVICES","devices":[]}
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: DEVICES
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 3: {"class":"WATCH","enable":true,"json":true,"nmea":false,"raw":0,"scaled":false,"timing":false,"split
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: WATCH
+2025-10-18 19:44:40,827 - tower_witch - DEBUG - get_gps_position_gpsd:258 - WATCH response: {'class': 'WATCH', 'enable': True, 'json': True, 'nmea': False, 'raw': 0, 'scaled': False, 'timing': False, 'split24': False, 'pps': False}
+2025-10-18 19:49:09,605 - tower_witch - INFO - <module>:548 - ============================================================
+2025-10-18 19:49:09,606 - tower_witch - INFO - <module>:549 - Tower Witch started at 2025-10-18 19:49:09.606026
+2025-10-18 19:49:09,606 - tower_witch - INFO - <module>:550 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=True, log_file='tower_witch.log', timeout=15)
+2025-10-18 19:49:09,606 - tower_witch - INFO - <module>:551 - ============================================================
+2025-10-18 19:49:09,607 - tower_witch - INFO - <module>:557 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:49:09,607 - tower_witch - INFO - <module>:569 - Starting GPS position acquisition
+2025-10-18 19:49:09,607 - tower_witch - INFO - <module>:580 - Attempting to read from gpsd
+2025-10-18 19:49:09,608 - tower_witch - DEBUG - check_gpsd_running:414 - Checking if gpspipe is available...
+2025-10-18 19:49:09,609 - tower_witch - DEBUG - check_gpsd_running:418 - gpspipe version: 
+2025-10-18 19:49:09,609 - tower_witch - DEBUG - check_gpsd_running:420 - Attempting to connect to gpsd...
+2025-10-18 19:49:09,610 - tower_witch - INFO - check_gpsd_running:424 - gpsd running: True
+2025-10-18 19:49:09,611 - tower_witch - DEBUG - get_gps_position_gpsd:226 - Starting gpspipe (default host/port)
+2025-10-18 19:49:09,611 - tower_witch - INFO - get_gps_position_gpsd:233 - Waiting up to 15s for GPS fix...
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 1: {"class":"VERSION","release":"3.25","rev":"3.25","proto_major":3,"proto_minor":15}
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: VERSION
+2025-10-18 19:49:09,612 - tower_witch - INFO - get_gps_position_gpsd:252 - gpsd version: 3.25
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 2: {"class":"DEVICES","devices":[]}
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: DEVICES
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 3: {"class":"WATCH","enable":true,"json":true,"nmea":false,"raw":0,"scaled":false,"timing":false,"split
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: WATCH
+2025-10-18 19:49:09,612 - tower_witch - DEBUG - get_gps_position_gpsd:258 - WATCH response: {'class': 'WATCH', 'enable': True, 'json': True, 'nmea': False, 'raw': 0, 'scaled': False, 'timing': False, 'split24': False, 'pps': False}
+2025-10-18 19:52:29,164 - tower_witch - INFO - <module>:548 - ============================================================
+2025-10-18 19:52:29,164 - tower_witch - INFO - <module>:549 - Tower Witch started at 2025-10-18 19:52:29.164681
+2025-10-18 19:52:29,164 - tower_witch - INFO - <module>:550 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=50.0, lat=None, lon=None, debug=True, log_file='tower_witch.log', timeout=10)
+2025-10-18 19:52:29,164 - tower_witch - INFO - <module>:551 - ============================================================
+2025-10-18 19:52:29,166 - tower_witch - INFO - <module>:557 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:52:29,166 - tower_witch - INFO - <module>:569 - Starting GPS position acquisition
+2025-10-18 19:52:29,166 - tower_witch - INFO - <module>:580 - Attempting to read from gpsd
+2025-10-18 19:52:29,167 - tower_witch - DEBUG - check_gpsd_running:414 - Checking if gpspipe is available...
+2025-10-18 19:52:29,168 - tower_witch - DEBUG - check_gpsd_running:418 - gpspipe version: 
+2025-10-18 19:52:29,168 - tower_witch - DEBUG - check_gpsd_running:420 - Attempting to connect to gpsd...
+2025-10-18 19:52:29,170 - tower_witch - INFO - check_gpsd_running:424 - gpsd running: True
+2025-10-18 19:52:29,170 - tower_witch - DEBUG - get_gps_position_gpsd:226 - Starting gpspipe (default host/port)
+2025-10-18 19:52:29,170 - tower_witch - INFO - get_gps_position_gpsd:233 - Waiting up to 10s for GPS fix...
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 1: {"class":"VERSION","release":"3.25","rev":"3.25","proto_major":3,"proto_minor":15}
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: VERSION
+2025-10-18 19:52:29,171 - tower_witch - INFO - get_gps_position_gpsd:252 - gpsd version: 3.25
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 2: {"class":"DEVICES","devices":[{"class":"DEVICE","path":"/dev/ttyACM0","driver":"u-blox","subtype":"U
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: DEVICES
+2025-10-18 19:52:29,171 - tower_witch - INFO - get_gps_position_gpsd:256 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 3: {"class":"WATCH","enable":true,"json":true,"nmea":false,"raw":0,"scaled":false,"timing":false,"split
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: WATCH
+2025-10-18 19:52:29,171 - tower_witch - DEBUG - get_gps_position_gpsd:258 - WATCH response: {'class': 'WATCH', 'enable': True, 'json': True, 'nmea': False, 'raw': 0, 'scaled': False, 'timing': False, 'split24': False, 'pps': False}
+2025-10-18 19:52:29,974 - tower_witch - DEBUG - get_gps_position_gpsd:243 - GPS message 4: {"class":"TPV","device":"/dev/ttyACM0","mode":3,"time":"2025-10-19T00:52:30.000Z","leapseconds":18,"
+2025-10-18 19:52:29,975 - tower_witch - DEBUG - get_gps_position_gpsd:248 - Message class: TPV
+2025-10-18 19:52:29,975 - tower_witch - DEBUG - get_gps_position_gpsd:262 - TPV message: lat=46.598471408, lon=-94.315350674, mode=3
+2025-10-18 19:52:29,975 - tower_witch - INFO - get_gps_position_gpsd:270 - Got position: lat=46.598471, lon=-94.315351, alt=390.1219, mode=3
+2025-10-18 19:52:29,975 - tower_witch - INFO - get_gps_position_gpsd:274 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 19:52:29,975 - tower_witch - INFO - <module>:623 - GPS position obtained: 46.598471, -94.315351
+2025-10-18 19:52:29,975 - tower_witch - INFO - <module>:627 - Altitude: 390.1 m
+2025-10-18 19:52:29,975 - tower_witch - INFO - <module>:632 - Fix quality: 3D fix (mode 3)
+2025-10-18 19:52:52,986 - tower_witch - INFO - <module>:548 - ============================================================
+2025-10-18 19:52:52,986 - tower_witch - INFO - <module>:549 - Tower Witch started at 2025-10-18 19:52:52.986266
+2025-10-18 19:52:52,986 - tower_witch - INFO - <module>:550 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=50.0, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 19:52:52,986 - tower_witch - INFO - <module>:551 - ============================================================
+2025-10-18 19:52:52,987 - tower_witch - INFO - <module>:557 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:52:52,987 - tower_witch - INFO - <module>:569 - Starting GPS position acquisition
+2025-10-18 19:52:52,987 - tower_witch - INFO - <module>:580 - Attempting to read from gpsd
+2025-10-18 19:52:52,992 - tower_witch - INFO - check_gpsd_running:424 - gpsd running: True
+2025-10-18 19:52:52,992 - tower_witch - INFO - get_gps_position_gpsd:233 - Waiting up to 10s for GPS fix...
+2025-10-18 19:52:52,993 - tower_witch - INFO - get_gps_position_gpsd:252 - gpsd version: 3.25
+2025-10-18 19:52:52,993 - tower_witch - INFO - get_gps_position_gpsd:256 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 19:52:53,978 - tower_witch - INFO - get_gps_position_gpsd:270 - Got position: lat=46.598481, lon=-94.315352, alt=393.677, mode=3
+2025-10-18 19:52:53,978 - tower_witch - INFO - get_gps_position_gpsd:274 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 19:52:53,978 - tower_witch - INFO - <module>:623 - GPS position obtained: 46.598481, -94.315352
+2025-10-18 19:52:53,978 - tower_witch - INFO - <module>:627 - Altitude: 393.7 m
+2025-10-18 19:52:53,978 - tower_witch - INFO - <module>:632 - Fix quality: 3D fix (mode 3)
+2025-10-18 19:56:55,912 - tower_witch - INFO - <module>:562 - ============================================================
+2025-10-18 19:56:55,912 - tower_witch - INFO - <module>:563 - Tower Witch started at 2025-10-18 19:56:55.912375
+2025-10-18 19:56:55,912 - tower_witch - INFO - <module>:564 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=50.0, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 19:56:55,912 - tower_witch - INFO - <module>:565 - ============================================================
+2025-10-18 19:56:55,913 - tower_witch - INFO - <module>:571 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:56:55,913 - tower_witch - INFO - <module>:583 - Starting GPS position acquisition
+2025-10-18 19:56:55,913 - tower_witch - INFO - <module>:594 - Attempting to read from gpsd
+2025-10-18 19:56:55,917 - tower_witch - INFO - check_gpsd_running:434 - gpsd running: True
+2025-10-18 19:56:55,917 - tower_witch - INFO - get_gps_position_gpsd:243 - Waiting up to 10s for GPS fix...
+2025-10-18 19:56:55,918 - tower_witch - INFO - get_gps_position_gpsd:262 - gpsd version: 3.25
+2025-10-18 19:56:55,918 - tower_witch - INFO - get_gps_position_gpsd:266 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 19:56:55,974 - tower_witch - INFO - get_gps_position_gpsd:280 - Got position: lat=46.598477, lon=-94.315367, alt=390.8295, mode=3
+2025-10-18 19:56:55,974 - tower_witch - INFO - get_gps_position_gpsd:284 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 19:56:55,974 - tower_witch - INFO - <module>:637 - GPS position obtained: 46.598477, -94.315367
+2025-10-18 19:56:55,974 - tower_witch - INFO - <module>:641 - Altitude: 390.8 m
+2025-10-18 19:56:55,974 - tower_witch - INFO - <module>:646 - Fix quality: 3D fix (mode 3)
+2025-10-18 19:59:12,031 - tower_witch - INFO - <module>:566 - ============================================================
+2025-10-18 19:59:12,031 - tower_witch - INFO - <module>:567 - Tower Witch started at 2025-10-18 19:59:12.031162
+2025-10-18 19:59:12,031 - tower_witch - INFO - <module>:568 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=50.0, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 19:59:12,031 - tower_witch - INFO - <module>:569 - ============================================================
+2025-10-18 19:59:12,032 - tower_witch - INFO - <module>:575 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 19:59:12,032 - tower_witch - INFO - <module>:587 - Starting GPS position acquisition
+2025-10-18 19:59:12,032 - tower_witch - INFO - <module>:598 - Attempting to read from gpsd
+2025-10-18 19:59:12,036 - tower_witch - INFO - check_gpsd_running:438 - gpsd running: True
+2025-10-18 19:59:12,036 - tower_witch - INFO - get_gps_position_gpsd:247 - Waiting up to 10s for GPS fix...
+2025-10-18 19:59:12,037 - tower_witch - INFO - get_gps_position_gpsd:266 - gpsd version: 3.25
+2025-10-18 19:59:12,037 - tower_witch - INFO - get_gps_position_gpsd:270 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 19:59:12,969 - tower_witch - INFO - get_gps_position_gpsd:284 - Got position: lat=46.598560, lon=-94.315316, alt=396.5869, mode=3
+2025-10-18 19:59:12,969 - tower_witch - INFO - get_gps_position_gpsd:288 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 19:59:12,969 - tower_witch - INFO - <module>:641 - GPS position obtained: 46.598560, -94.315316
+2025-10-18 19:59:12,969 - tower_witch - INFO - <module>:645 - Altitude: 396.6 m
+2025-10-18 19:59:12,970 - tower_witch - INFO - <module>:650 - Fix quality: 3D fix (mode 3)
+2025-10-18 20:00:09,460 - tower_witch - INFO - <module>:575 - ============================================================
+2025-10-18 20:00:09,461 - tower_witch - INFO - <module>:576 - Tower Witch started at 2025-10-18 20:00:09.461009
+2025-10-18 20:00:09,461 - tower_witch - INFO - <module>:577 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=50.0, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 20:00:09,461 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-18 20:00:09,462 - tower_witch - INFO - <module>:584 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 20:00:09,462 - tower_witch - INFO - <module>:596 - Starting GPS position acquisition
+2025-10-18 20:00:09,462 - tower_witch - INFO - <module>:607 - Attempting to read from gpsd
+2025-10-18 20:00:09,465 - tower_witch - INFO - check_gpsd_running:447 - gpsd running: True
+2025-10-18 20:00:09,466 - tower_witch - INFO - get_gps_position_gpsd:256 - Waiting up to 10s for GPS fix...
+2025-10-18 20:00:09,467 - tower_witch - INFO - get_gps_position_gpsd:275 - gpsd version: 3.25
+2025-10-18 20:00:09,467 - tower_witch - INFO - get_gps_position_gpsd:279 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 20:00:09,972 - tower_witch - INFO - get_gps_position_gpsd:293 - Got position: lat=46.598570, lon=-94.315311, alt=393.3114, mode=3
+2025-10-18 20:00:09,972 - tower_witch - INFO - get_gps_position_gpsd:297 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 20:00:09,972 - tower_witch - INFO - <module>:650 - GPS position obtained: 46.598570, -94.315311
+2025-10-18 20:00:09,972 - tower_witch - INFO - <module>:654 - Altitude: 393.3 m
+2025-10-18 20:00:09,972 - tower_witch - INFO - <module>:659 - Fix quality: 3D fix (mode 3)
+2025-10-18 20:03:47,596 - tower_witch - INFO - <module>:575 - ============================================================
+2025-10-18 20:03:47,596 - tower_witch - INFO - <module>:576 - Tower Witch started at 2025-10-18 20:03:47.596302
+2025-10-18 20:03:47,596 - tower_witch - INFO - <module>:577 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 20:03:47,596 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-18 20:03:47,597 - tower_witch - INFO - <module>:584 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 20:03:47,597 - tower_witch - INFO - <module>:596 - Starting GPS position acquisition
+2025-10-18 20:03:47,597 - tower_witch - INFO - <module>:607 - Attempting to read from gpsd
+2025-10-18 20:03:47,601 - tower_witch - INFO - check_gpsd_running:447 - gpsd running: True
+2025-10-18 20:03:47,601 - tower_witch - INFO - get_gps_position_gpsd:256 - Waiting up to 10s for GPS fix...
+2025-10-18 20:03:47,602 - tower_witch - INFO - get_gps_position_gpsd:275 - gpsd version: 3.25
+2025-10-18 20:03:47,602 - tower_witch - INFO - get_gps_position_gpsd:279 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 20:03:47,979 - tower_witch - INFO - get_gps_position_gpsd:293 - Got position: lat=46.598586, lon=-94.315356, alt=394.3843, mode=3
+2025-10-18 20:03:47,979 - tower_witch - INFO - get_gps_position_gpsd:297 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 20:03:47,979 - tower_witch - INFO - <module>:650 - GPS position obtained: 46.598586, -94.315356
+2025-10-18 20:03:47,979 - tower_witch - INFO - <module>:654 - Altitude: 394.4 m
+2025-10-18 20:03:47,979 - tower_witch - INFO - <module>:659 - Fix quality: 3D fix (mode 3)
+2025-10-18 20:06:05,063 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-18 20:06:05,063 - tower_witch - INFO - <module>:579 - Tower Witch started at 2025-10-18 20:06:05.063796
+2025-10-18 20:06:05,063 - tower_witch - INFO - <module>:580 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=50.0, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 20:06:05,063 - tower_witch - INFO - <module>:581 - ============================================================
+2025-10-18 20:06:05,065 - tower_witch - INFO - <module>:587 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 20:06:05,065 - tower_witch - INFO - <module>:599 - Starting GPS position acquisition
+2025-10-18 20:06:05,065 - tower_witch - INFO - <module>:610 - Attempting to read from gpsd
+2025-10-18 20:06:05,068 - tower_witch - INFO - check_gpsd_running:447 - gpsd running: True
+2025-10-18 20:06:05,069 - tower_witch - INFO - get_gps_position_gpsd:256 - Waiting up to 10s for GPS fix...
+2025-10-18 20:06:05,070 - tower_witch - INFO - get_gps_position_gpsd:275 - gpsd version: 3.25
+2025-10-18 20:06:05,070 - tower_witch - INFO - get_gps_position_gpsd:279 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 20:06:05,991 - tower_witch - INFO - get_gps_position_gpsd:293 - Got position: lat=46.598525, lon=-94.315388, alt=392.7063, mode=3
+2025-10-18 20:06:05,991 - tower_witch - INFO - get_gps_position_gpsd:297 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 20:06:05,991 - tower_witch - INFO - <module>:653 - GPS position obtained: 46.598525, -94.315388
+2025-10-18 20:06:05,991 - tower_witch - INFO - <module>:657 - Altitude: 392.7 m
+2025-10-18 20:06:05,991 - tower_witch - INFO - <module>:662 - Fix quality: 3D fix (mode 3)
+2025-10-18 20:32:19,458 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-18 20:32:19,458 - tower_witch - INFO - <module>:579 - Tower Witch started at 2025-10-18 20:32:19.458847
+2025-10-18 20:32:19,458 - tower_witch - INFO - <module>:580 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 20:32:19,458 - tower_witch - INFO - <module>:581 - ============================================================
+2025-10-18 20:32:19,460 - tower_witch - INFO - <module>:587 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 20:32:19,460 - tower_witch - INFO - <module>:599 - Starting GPS position acquisition
+2025-10-18 20:32:19,460 - tower_witch - INFO - <module>:610 - Attempting to read from gpsd
+2025-10-18 20:32:19,464 - tower_witch - INFO - check_gpsd_running:447 - gpsd running: True
+2025-10-18 20:32:19,464 - tower_witch - INFO - get_gps_position_gpsd:256 - Waiting up to 10s for GPS fix...
+2025-10-18 20:32:19,465 - tower_witch - INFO - get_gps_position_gpsd:275 - gpsd version: 3.25
+2025-10-18 20:32:19,465 - tower_witch - INFO - get_gps_position_gpsd:279 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 20:32:20,017 - tower_witch - INFO - get_gps_position_gpsd:293 - Got position: lat=46.598495, lon=-94.315362, alt=390.0044, mode=3
+2025-10-18 20:32:20,017 - tower_witch - INFO - get_gps_position_gpsd:297 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 20:32:20,017 - tower_witch - INFO - <module>:653 - GPS position obtained: 46.598495, -94.315362
+2025-10-18 20:32:20,017 - tower_witch - INFO - <module>:657 - Altitude: 390.0 m
+2025-10-18 20:32:20,017 - tower_witch - INFO - <module>:662 - Fix quality: 3D fix (mode 3)
+2025-10-18 21:29:26,970 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-18 21:29:26,970 - tower_witch - INFO - <module>:579 - Tower Witch started at 2025-10-18 21:29:26.970240
+2025-10-18 21:29:26,970 - tower_witch - INFO - <module>:580 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-18 21:29:26,970 - tower_witch - INFO - <module>:581 - ============================================================
+2025-10-18 21:29:26,971 - tower_witch - INFO - <module>:587 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-18 21:29:26,980 - tower_witch - INFO - <module>:599 - Starting GPS position acquisition
+2025-10-18 21:29:26,980 - tower_witch - INFO - <module>:610 - Attempting to read from gpsd
+2025-10-18 21:29:26,983 - tower_witch - INFO - check_gpsd_running:447 - gpsd running: True
+2025-10-18 21:29:26,984 - tower_witch - INFO - get_gps_position_gpsd:256 - Waiting up to 10s for GPS fix...
+2025-10-18 21:29:26,984 - tower_witch - INFO - get_gps_position_gpsd:275 - gpsd version: 3.25
+2025-10-18 21:29:26,984 - tower_witch - INFO - get_gps_position_gpsd:279 - GPS device: /dev/ttyACM0 - u-blox
+2025-10-18 21:29:27,032 - tower_witch - INFO - get_gps_position_gpsd:293 - Got position: lat=46.598512, lon=-94.315395, alt=382.8924, mode=3
+2025-10-18 21:29:27,033 - tower_witch - INFO - get_gps_position_gpsd:297 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-18 21:29:27,033 - tower_witch - INFO - <module>:653 - GPS position obtained: 46.598512, -94.315395
+2025-10-18 21:29:27,033 - tower_witch - INFO - <module>:657 - Altitude: 382.9 m
+2025-10-18 21:29:27,033 - tower_witch - INFO - <module>:662 - Fix quality: 3D fix (mode 3)

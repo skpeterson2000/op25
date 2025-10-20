@@ -1,2 +1,3 @@
-"Sysname"	"Control Channel List"	"Offset"	"NAC"	"Modulation"	"TGID Tags File"	"Whitelist"	"Blacklist"	"Center Frequency"
-"P25 SYSTEM"	"876.54320"	"0"	"0"	"cqpsk"	""	""	""	""
+Sysname	Control Channel List	Offset	NAC	Modulation	TGID Tags File	Whitelist	Blacklist	Center Frequency
+Baxter ARMER	852.9500,857.2125	0	0x402	cqpsk	armer-tags.tsv			855.2125
+Jenkins ARMER	858.2625,852.9750	0	0x406	cqpsk	armer-tags.tsv			858
