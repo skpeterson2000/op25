@@ -5,6 +5,7 @@ import utm
 import maidenhead as mh
 import mgrs
 import json
+import csv
 from math import radians, sin, cos, sqrt, atan2, degrees
 import os
 import subprocess
@@ -33,13 +34,41 @@ def calculate_bearing(lat1, lon1, lat2, lon2):
     y = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dlon)
     return (degrees(atan2(x, y)) + 360) % 360
 
-# Find closest sites from JSON
-def find_closest_sites(json_filepath, user_lat, user_lon, num_sites=5):
+# Find closest sites from CSV
+def find_closest_sites(csv_filepath, user_lat, user_lon, num_sites=5):
     try:
-        with open(json_filepath, "r", encoding="utf-8") as file:
-            data = json.load(file)
+        with open(csv_filepath, "r", encoding="utf-8") as file:
+            # Read raw CSV data to handle frequency columns correctly
+            csv_reader = csv.reader(file)
+            headers = next(csv_reader)  # Skip headers
+            data = []
+            
+            for row in csv_reader:
+                # Create site dictionary with proper column access
+                site = {
+                    "RFSS": row[0] if len(row) > 0 else "",
+                    "Site Dec": row[1] if len(row) > 1 else "",
+                    "Site Hex": row[2] if len(row) > 2 else "",
+                    "Site NAC": row[3] if len(row) > 3 else "",
+                    "Description": row[4] if len(row) > 4 else "",
+                    "County Name": row[5] if len(row) > 5 else "",
+                    "Lat": row[6] if len(row) > 6 else "",
+                    "Lon": row[7] if len(row) > 7 else "",
+                    "Range": row[8] if len(row) > 8 else "",
+                }
+                
+                # Extract all frequencies from columns 9 onwards
+                frequencies = []
+                for i in range(9, len(row)):
+                    value = row[i].strip() if row[i] else ""
+                    if value:
+                        frequencies.append(value)
+                
+                site["Frequencies"] = frequencies
+                data.append(site)
+                
     except FileNotFoundError:
-        print(f"Error: JSON file not found at {json_filepath}")
+        print(f"Error: CSV file not found at {csv_filepath}")
         return []
 
     distances = []
@@ -49,11 +78,20 @@ def find_closest_sites(json_filepath, user_lat, user_lon, num_sites=5):
             site_lon = float(site["Lon"])
             distance = haversine(user_lat, user_lon, site_lat, site_lon)
             bearing = calculate_bearing(user_lat, user_lon, site_lat, site_lon)
-            frequencies = site.get("Frequencies", [])
-            control_frequencies = [freq.replace("c", "") for freq in frequencies if freq.endswith("c")]
+            
+            # Find all control channels (those ending with 'c')
+            control_frequencies = []
+            for freq in site["Frequencies"]:
+                if freq.endswith("c"):
+                    control_frequencies.append(freq.replace("c", ""))
+            
+            # Get NAC (Network Access Code)
+            nac = site.get("Site NAC", "N/A")
+            
             if control_frequencies:
-                distances.append((site, distance, bearing, control_frequencies))
-        except (KeyError, ValueError):
+                distances.append((site, distance, bearing, control_frequencies, nac))
+        except (KeyError, ValueError) as e:
+            print(f"Error processing site {site.get('Description', 'Unknown')}: {e}")
             continue
 
     distances.sort(key=lambda x: x[1])
@@ -176,14 +214,14 @@ class GPSWindow(QMainWindow):
 
         # Table for Closest Towers
         self.table = QTableWidget()
-        self.table.setColumnCount(5)
-        self.table.setHorizontalHeaderLabels(["Description", "County", "Distance (mi)", "Bearing (°)", "Control Frequencies"])
+        self.table.setColumnCount(6)
+        self.table.setHorizontalHeaderLabels(["Description", "County", "Distance (mi)", "Bearing (°)", "NAC", "Control Frequencies"])
         self.table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.layout.addWidget(self.table)
 
-        # Path to the JSON file (using the crow_wing_sites_and_frequencies.json in current directory)
+        # Path to the CSV file (using the trs_sites_3508.csv in current directory)
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        self.json_filepath = os.path.join(script_dir, "crow_wing_sites_and_frequencies.json")
+        self.csv_filepath = os.path.join(script_dir, "trs_sites_3508.csv")
 
         # Start the GPS worker thread
         self.gps_worker = GPSWorker()
@@ -235,14 +273,15 @@ class GPSWindow(QMainWindow):
         self.display_closest_sites(latitude, longitude)
 
     def display_closest_sites(self, latitude, longitude):
-        closest_sites = find_closest_sites(self.json_filepath, latitude, longitude)
+        closest_sites = find_closest_sites(self.csv_filepath, latitude, longitude)
         self.table.setRowCount(len(closest_sites))
-        for row, (site, distance, bearing, control_frequencies) in enumerate(closest_sites):
+        for row, (site, distance, bearing, control_frequencies, nac) in enumerate(closest_sites):
             self.table.setItem(row, 0, QTableWidgetItem(site["Description"]))
             self.table.setItem(row, 1, QTableWidgetItem(site["County Name"]))
             self.table.setItem(row, 2, QTableWidgetItem(f"{distance:.2f}"))
             self.table.setItem(row, 3, QTableWidgetItem(f"{bearing:.2f}"))
-            self.table.setItem(row, 4, QTableWidgetItem(", ".join(control_frequencies)))
+            self.table.setItem(row, 4, QTableWidgetItem(str(nac)))
+            self.table.setItem(row, 5, QTableWidgetItem(", ".join(control_frequencies)))
 
 # Main Application
 if __name__ == "__main__":
