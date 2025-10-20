@@ -263,9 +263,19 @@ class GPSWindow(QMainWindow):
             mgrs_zone = mgrs_result[:3]
             mgrs_grid = mgrs_result[3:5]
             mgrs_coords = mgrs_result[5:]
+            
+            # Split MGRS coordinates into easting and northing for better readability
+            if len(mgrs_coords) >= 6:
+                mid_point = len(mgrs_coords) // 2
+                easting = mgrs_coords[:mid_point]
+                northing = mgrs_coords[mid_point:]
+                formatted_coords = f"{easting} {northing}"
+            else:
+                formatted_coords = mgrs_coords
+                
             self.label_mgrs_zone.setText(f"MGRS Zone: {mgrs_zone}")
             self.label_mgrs_grid.setText(f"MGRS Grid: {mgrs_grid}")
-            self.label_mgrs_coords.setText(f"MGRS Easting/Northing: {mgrs_coords}")
+            self.label_mgrs_coords.setText(f"MGRS Easting/Northing: {formatted_coords}")
         except Exception as e:
             print(f"Error calculating grid systems: {e}")
 
