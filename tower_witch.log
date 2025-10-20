@@ -1,0 +1,10 @@
+2025-10-20 02:58:10,688 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-20 02:58:10,688 - tower_witch - INFO - <module>:579 - Tower Witch started at 2025-10-20 02:58:10.688851
+2025-10-20 02:58:10,688 - tower_witch - INFO - <module>:580 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-20 02:58:10,688 - tower_witch - INFO - <module>:581 - ============================================================
+2025-10-20 02:58:10,689 - tower_witch - ERROR - <module>:590 - Tower CSV file not found: trs_sites_3508.csv
+2025-10-20 02:58:42,656 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-20 02:58:42,656 - tower_witch - INFO - <module>:579 - Tower Witch started at 2025-10-20 02:58:42.656338
+2025-10-20 02:58:42,656 - tower_witch - INFO - <module>:580 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-20 02:58:42,656 - tower_witch - INFO - <module>:581 - ============================================================
+2025-10-20 02:58:42,656 - tower_witch - ERROR - <module>:590 - Tower CSV file not found: trs_sites_3508.csv

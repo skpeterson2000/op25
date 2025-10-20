@@ -214,3 +214,19 @@
 2025-10-18 21:29:27,033 - tower_witch - INFO - <module>:653 - GPS position obtained: 46.598512, -94.315395
 2025-10-18 21:29:27,033 - tower_witch - INFO - <module>:657 - Altitude: 382.9 m
 2025-10-18 21:29:27,033 - tower_witch - INFO - <module>:662 - Fix quality: 3D fix (mode 3)
+2025-10-20 03:01:16,820 - tower_witch - INFO - <module>:578 - ============================================================
+2025-10-20 03:01:16,820 - tower_witch - INFO - <module>:579 - Tower Witch started at 2025-10-20 03:01:16.820662
+2025-10-20 03:01:16,820 - tower_witch - INFO - <module>:580 - Arguments: Namespace(csv='trs_sites_3508.csv', unit='mi', range=30, lat=None, lon=None, debug=False, log_file='tower_witch.log', timeout=10)
+2025-10-20 03:01:16,820 - tower_witch - INFO - <module>:581 - ============================================================
+2025-10-20 03:01:16,821 - tower_witch - INFO - <module>:587 - Successfully loaded 290 towers from trs_sites_3508.csv
+2025-10-20 03:01:16,821 - tower_witch - INFO - <module>:599 - Starting GPS position acquisition
+2025-10-20 03:01:16,821 - tower_witch - INFO - <module>:610 - Attempting to read from gpsd
+2025-10-20 03:01:16,825 - tower_witch - INFO - check_gpsd_running:447 - gpsd running: True
+2025-10-20 03:01:16,825 - tower_witch - INFO - get_gps_position_gpsd:256 - Waiting up to 10s for GPS fix...
+2025-10-20 03:01:16,826 - tower_witch - INFO - get_gps_position_gpsd:275 - gpsd version: 3.25
+2025-10-20 03:01:16,827 - tower_witch - INFO - get_gps_position_gpsd:279 - GPS device: /dev/ttyACM0 - NMEA0183
+2025-10-20 03:01:17,029 - tower_witch - INFO - get_gps_position_gpsd:293 - Got position: lat=46.598494, lon=-94.315334, alt=406.3, mode=3
+2025-10-20 03:01:17,029 - tower_witch - INFO - get_gps_position_gpsd:297 - ✓ Valid GPS fix obtained (mode 3)
+2025-10-20 03:01:17,029 - tower_witch - INFO - <module>:653 - GPS position obtained: 46.598494, -94.315334
+2025-10-20 03:01:17,029 - tower_witch - INFO - <module>:657 - Altitude: 406.3 m
+2025-10-20 03:01:17,029 - tower_witch - INFO - <module>:662 - Fix quality: 3D fix (mode 3)
